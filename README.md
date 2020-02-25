@@ -10,7 +10,7 @@ The changes are as follows:
   - > New bot user API access tokens may not access RTM  
     https://github.com/slack-go/slack/issues/654#issuecomment-578946919
     
-    :thinking_face:
+    🤔
 
 ![](/screencapture_suimasen.gif)
 
@@ -18,19 +18,16 @@ The changes are as follows:
 
 ## Create app
 
-Create an app with any name.
-
-![](/screenshot_create_app.png)
-
-Copy `Verification Token` at `Basic Infomation > App Credentials`
+Create an app with any name (e.g. beerbot) and copy `Verification Token` at `Basic Infomation > App Credentials` .
 
 ![](/screenshot_varification_token.png)
 
-!!! CAUTION !!!
+**!!! CAUTION !!!**
 > This deprecated Verification Token can still be used to verify that requests come from Slack, but we strongly recommend using the above, more secure, signing secret instead.
 
 ## Run Server
 
+Run the server on a machine accessible from the internet.
 ```sh
 go build -o bot
 VERIFICATION_TOKEN=kYBhXXXXXXXXXXXXXXXXXXXX ./bot
@@ -52,6 +49,5 @@ Features > Interacive Components
 
 ## Add the app to Slack
 
-Add the app you just created on a channel.
-Then execute `/sumimasen` command.
+Invite to your favorite channel and execute the command`/suimasen`.
 Cheers :beer:
